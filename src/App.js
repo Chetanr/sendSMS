@@ -14,6 +14,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { mainListItems } from "./listItems";
 import SendSms from "./Send";
+import History from "./History";
 
 const drawerWidth = 240;
 
@@ -156,6 +157,9 @@ export default function App() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <SendSms />
+        </Container>
+        <Container xs={12} md={8} lg={9} className={classes.container}>
+          <History />
         </Container>
       </main>
     </div>
