@@ -1,3 +1,9 @@
+/*
+This file is mainly used to display the header of the page.
+AppBar, Toolbar and Button components of Material UI has been
+used over here.
+*/
+
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -29,6 +35,10 @@ const Header = (props) => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
+          {/*
+            Display the button for Send SMS that would display the 
+            Send.js file
+          */}
           <Button
             onClick={() => handleButtonClick("/")}
             variant="h6"

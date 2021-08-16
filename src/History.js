@@ -1,3 +1,13 @@
+/*
+  This file is used to display the history of all the sms sent along with 
+  the statusof the messages.
+
+  Table components of Material UI has been used over here.
+
+  https://ue1um90kg3.execute-api.us-east-1.amazonaws.com/getHistory GET API
+  returns the history of all the messages
+*/
+
 import React, { useState, useEffect } from "react";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";

@@ -1,3 +1,12 @@
+/*
+  This file is used to display the components to get the input from the user.
+  
+  InputLabel, TextField, Button and FormControl of Material UI has been used.
+
+  https://8leafevc72.execute-api.us-east-1.amazonaws.com/send is the POST API
+  that is used to send the data to AWS to perform the sms sending.
+*/
+
 import React, { useState } from "react";
 import { InputLabel, TextField, Button, FormControl } from "@material-ui/core";
 import axios from "axios";
@@ -27,7 +36,7 @@ const Send = (props) => {
             : alert("Mesage failed to send.!");
         },
         (error) => {
-          return error;
+          alert("Error at the backend in sending the sms. Try again.!");
         }
       );
   };
