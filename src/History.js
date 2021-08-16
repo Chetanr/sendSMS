@@ -6,7 +6,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import axios from "axios";
 
-function History() {
+const History = (props) => {
   const [history, getHistory] = useState([]);
 
   useEffect(() => {
@@ -58,6 +58,6 @@ function History() {
       </Table>
     </React.Fragment>
   );
-}
+};
 
 export default History;

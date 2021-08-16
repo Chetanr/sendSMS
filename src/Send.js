@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { InputLabel, TextField, Button, FormControl } from "@material-ui/core";
 import axios from "axios";
 
-function Send() {
+const Send = (props) => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
@@ -42,7 +42,7 @@ function Send() {
 
   return (
     <div>
-      {/* <form onSubmit={() => sendData()}> */}
+      <br />
       <InputLabel>Phone Number :</InputLabel>
       <br />
       <FormControl>
@@ -62,9 +62,8 @@ function Send() {
       <Button onClick={() => sendData()} variant="contained" color="primary">
         Send Message
       </Button>
-      {/* </form> */}
     </div>
   );
-}
+};
 
 export default Send;
