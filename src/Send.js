@@ -10,8 +10,20 @@
 import React, { useState } from "react";
 import { InputLabel, TextField, Button, FormControl } from "@material-ui/core";
 import axios from "axios";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyle = makeStyles((theme) => ({
+  root: {
+    padding: "50px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+}));
 
 const Send = (props) => {
+  const classes = useStyle();
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
@@ -50,7 +62,7 @@ const Send = (props) => {
   };
 
   return (
-    <div>
+    <div className={classes.root}>
       <br />
       <InputLabel>Phone Number :</InputLabel>
       <br />
