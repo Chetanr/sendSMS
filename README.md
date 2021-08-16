@@ -18,3 +18,5 @@ To run the code, navigate to the root directory (sms-app) of the project
 
 1. Install the dependencies using `npm install`.
 2. Run the code in your localhost using `npm start`.
+
+The app has already been hosted using AWS Amplify and can be found on https://master.d15rkinftbj6e2.amplifyapp.com/
