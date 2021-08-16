@@ -1,6 +1,6 @@
 The project is being built using ReactJs on the frontend and AWS Services at the backend. The backend AWS services has been written using Python.
 
-A detailed architecture of the application and the services can be found in architecture.png file.
+Architecture of the application and the AWS services used can be found in architecture.png![Architecture](Architecture.png).
 
 The front end part of the code consists of the following components
 
