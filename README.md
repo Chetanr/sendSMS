@@ -12,6 +12,8 @@ The front end part of the code consists of the following components
 The Material UI (https://material-ui.com/) library has been used to render the UI.
 In order to perform the Get and Post requests, Axios (https://www.npmjs.com/package/axios) npm package has been used.
 
+The Lambda functions can be found in the '**Lambda Functions**' folder
+
 # Steps to run the code
 
 To run the code, navigate to the root directory (sms-app) of the project
