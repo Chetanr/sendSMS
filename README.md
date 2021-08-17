@@ -1,18 +1,20 @@
 The project is being built using ReactJs on the frontend and AWS Services at the backend. The backend AWS services has been written using Python.
 
+The application has been deployed using **AWS Amplify** Service.
+
 Architecture of the application and the AWS services used can be found in architecture.png![Architecture](Architecture.png).
 
 The front end part of the code consists of the following components
 
 1. **App.js** - This component mainly consists the Route component of 'react-router-dom' which is mainly helps to build a react application enabling navigation among various components
 2. **Header.js** - This component is mainly used to display the toolbar with the options for the user to either navigate between send sms and history tabs.
-3. **Send.js** - This component mainly displays the view enabling the user to enter the required details to send the sms.
-4. **History.js** - This component mainly displays the history of all the sms sent along with the status.
+3. **Send.js** - This component mainly displays the view enabling the user to enter the required details to send the sms. The details are then forwarded to the POST API (REST) which further perform the required actions through a Lambda function.
+4. **History.js** - This component mainly displays the history of all the sms sent along with the status. A GET API (REST) is called in order to get the data from DynamoDb through a Lambda function..
 
 The Material UI (https://material-ui.com/) library has been used to render the UI.
 In order to perform the Get and Post requests, Axios (https://www.npmjs.com/package/axios) npm package has been used.
 
-The Lambda functions can be found in the '**Lambda Functions**' folder
+The Lambda functions used to implement the services at the backend can be found in the '**Lambda Functions**' folder
 
 # Steps to run the code
 
