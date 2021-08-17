@@ -1,3 +1,5 @@
+#This function is used to get the data from the smsHistory Table
+
 import boto3
 from botocore.exceptions import ClientError
 
